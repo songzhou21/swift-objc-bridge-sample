@@ -7,10 +7,16 @@
 //
 
 #import "ObjcObject.h"
+#import "swift_objc_bridge-Swift.h"
 
 @implementation ObjcObject
 
 - (void)test {
     NSLog(@"hello from objc");
+}
+
+- (void)testSwift {
+    SomeSwiftClass *o = [SomeSwiftClass new];
+    [o test];
 }
 @end

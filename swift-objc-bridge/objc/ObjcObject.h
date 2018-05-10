@@ -11,5 +11,6 @@
 @interface ObjcObject : NSObject
 
 - (void)test;
+- (void)testSwift;
 
 @end

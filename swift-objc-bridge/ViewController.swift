@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let objcObject = ObjcObject()
-        objcObject.test()
+        objcObject.testSwift()
         
         // Do any additional setup after loading the view, typically from a nib.
     }
