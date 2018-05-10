@@ -12,6 +12,7 @@
 		589300D820A3C6C20088E887 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 589300D620A3C6C20088E887 /* Main.storyboard */; };
 		589300DA20A3C6C30088E887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 589300D920A3C6C30088E887 /* Assets.xcassets */; };
 		589300DD20A3C6C30088E887 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 589300DB20A3C6C30088E887 /* LaunchScreen.storyboard */; };
+		589300E820A3C7460088E887 /* ObjcObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 589300E720A3C7460088E887 /* ObjcObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		589300D920A3C6C30088E887 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		589300DC20A3C6C30088E887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		589300DE20A3C6C30088E887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		589300E520A3C7460088E887 /* swift-objc-bridge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift-objc-bridge-Bridging-Header.h"; sourceTree = "<group>"; };
+		589300E620A3C7460088E887 /* ObjcObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcObject.h; sourceTree = "<group>"; };
+		589300E720A3C7460088E887 /* ObjcObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,9 @@
 			children = (
 				589300D220A3C6C20088E887 /* AppDelegate.swift */,
 				589300D420A3C6C20088E887 /* ViewController.swift */,
+				589300E620A3C7460088E887 /* ObjcObject.h */,
+				589300E720A3C7460088E887 /* ObjcObject.m */,
+				589300E520A3C7460088E887 /* swift-objc-bridge-Bridging-Header.h */,
 				589300E420A3C7090088E887 /* Supporting Files */,
 			);
 			path = "swift-objc-bridge";
@@ -104,6 +111,7 @@
 				TargetAttributes = {
 					589300CE20A3C6C20088E887 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -143,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				589300E820A3C7460088E887 /* ObjcObject.m in Sources */,
 				589300D520A3C6C20088E887 /* ViewController.swift in Sources */,
 				589300D320A3C6C20088E887 /* AppDelegate.swift in Sources */,
 			);
@@ -288,15 +297,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2484Z5XMVT;
-				INFOPLIST_FILE = "swift-objc-bridge/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/swift-objc-bridge/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "me.songzhou.swift-objc-bridge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-objc-bridge/swift-objc-bridge-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -306,15 +318,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2484Z5XMVT;
-				INFOPLIST_FILE = "swift-objc-bridge/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/swift-objc-bridge/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "me.songzhou.swift-objc-bridge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-objc-bridge/swift-objc-bridge-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
