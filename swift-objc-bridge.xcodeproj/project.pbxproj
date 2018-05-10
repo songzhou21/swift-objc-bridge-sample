@@ -56,12 +56,20 @@
 			children = (
 				589300D220A3C6C20088E887 /* AppDelegate.swift */,
 				589300D420A3C6C20088E887 /* ViewController.swift */,
+				589300E420A3C7090088E887 /* Supporting Files */,
+			);
+			path = "swift-objc-bridge";
+			sourceTree = "<group>";
+		};
+		589300E420A3C7090088E887 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				589300D620A3C6C20088E887 /* Main.storyboard */,
 				589300D920A3C6C30088E887 /* Assets.xcassets */,
 				589300DB20A3C6C30088E887 /* LaunchScreen.storyboard */,
 				589300DE20A3C6C30088E887 /* Info.plist */,
 			);
-			path = "swift-objc-bridge";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
